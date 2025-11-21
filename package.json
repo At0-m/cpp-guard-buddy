@@ -3,14 +3,10 @@
   "displayName": "C/C++ Header Guard Buddy",
   "description": "Автоматически вставляет include guard или #pragma once и переключает их в заголовочных файлах C/C++.",
   "version": "0.0.1",
-  "publisher": "At0-m",
+  "publisher": "your-name",
   "engines": {
     "vscode": "^1.85.0"
   },
-  "categories": [
-    "Programming Languages",
-    "Other"
-  ],
   "activationEvents": [
     "onLanguage:c",
     "onLanguage:cpp",
@@ -18,11 +14,11 @@
     "onCommand:cpp-guard-buddy.usePragmaOnce",
     "onCommand:cpp-guard-buddy.toggle"
   ],
-  "main": "./out/extension.js",
+  "main": "./out/extension.js",      
   "contributes": {
     "commands": [
       {
-        "command": "cpp-guard-buddy.insertGuard",
+        "command": "cpp-guard-buddy.insertGuard",  
         "title": "Header Guard: Insert include guard"
       },
       {
@@ -32,13 +28,6 @@
       {
         "command": "cpp-guard-buddy.toggle",
         "title": "Header Guard: Toggle guard/pragma"
-      }
-    ],
-    "keybindings": [
-      {
-        "command": "cpp-guard-buddy.toggle",
-        "key": "ctrl+alt+g",
-        "when": "editorTextFocus && resourceExtname =~ /\\.(h|hpp|hh|hxx)$/"
       }
     ]
   },
